@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption & Decryption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ENCRYPTION & DECRYPTION</h1>
+        <nav>
+            <ul>
+                <li><a href="#encrypt-decrypt">Encrypt/Decrypt</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#discussion">Discussion Board</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="encrypt-decrypt">
+            <h2>Encrypt & Decrypt Messages</h2>
+            <label for="message">Enter a message:</label>
+            <input type="text" id="message">
+            
+            <label for="shift">Enter shift value (1-25):</label>
+            <input type="number" id="shift" min="1" max="25">
+
+            <div class="button-group">
+                <button onclick="encryptText()">Encrypt</button>
+                <button onclick="decryptText()">Decrypt</button>
+            </div>
+
+            <h3>Result:</h3>
+            <p id="output"></p>
+        </section>
+
+        <section id="videos">
+            <h2>Videos on Encryption & Decryption</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=tT6zv81bVcU" 
+                    title="Encryption Explained" allowfullscreen></iframe>
+        </section>
+
+        <section id="discussion">
+            <h2>Discussion Board</h2>
+        
+            <h3>Why is Encryption Important?</h3>
+            <p>
+                Encryption protects data from hackers and unauthorized access by scrambling information.  
+                It ensures that only the intended recipient can read it, safeguarding sensitive details like  
+                passwords and bank information.
+            </p>
+        
+            <h3>Can Encryption Be Misused?</h3>
+            <p>
+                Yes, encryption can be used for illegal activities, such as hiding cybercrimes.  
+                While it ensures privacy, it also presents challenges for law enforcement in tracking harmful activities.
+            </p>
+        
+            <h3>Real-Life Ethical Concerns</h3>
+            <ul>
+                <li>
+                    <strong>Privacy vs. Security:</strong> Governments argue encryption may hide criminal activities  
+                    while protecting personal data.
+                </li>
+                
+                <li>
+                    <strong>Ransomware Attacks:</strong> Hackers encrypt victims’ files and demand ransom payments.
+                </li>
+                
+                <li>
+                    <strong>Government Backdoors:</strong> Some governments want encryption backdoors,  
+                    but this could weaken security.
+                </li>
+                
+                <li>
+                    <strong>Corporate Data Protection:</strong> Companies use encryption for security but may also misuse it.
+                </li>
+                
+                <li>
+                    <strong>Censorship & Control:</strong> Some countries limit encryption, restricting private communication.
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
