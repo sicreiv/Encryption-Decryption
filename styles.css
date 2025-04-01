@@ -143,6 +143,14 @@ iframe {
     width: 100%;
     max-width: 700px;
 }
+.copyright {
+    text-align: center;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
